@@ -1,2 +1,1 @@
-# Ruijie-Lu
-Github Page for Ruijie Lu
+This is the personal website of Ruijie Lu. Template is stolen from [Jon Barron](https://jonbarron.info/).
