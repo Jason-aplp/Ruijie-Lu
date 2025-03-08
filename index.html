@@ -45,6 +45,47 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <!-- MOVIS -->
+          <tr onmouseout="MOVIS_stop()" onmouseover="MOVIS_start()">
+            <td style="width:30%;vertical-align:middle;padding-left:0px;padding-top:0px">
+              <div class="one" style="display: flex; align-items: center;">
+                <img src='images/MOVIS.png' width="220">
+              </div>
+              <script type="text/javascript">
+                function MOVIS_start() {
+                  document.getElementById('MOVIS_image').style.opacity = "1";
+                }
+
+                function MOVIS_stop() {
+                  document.getElementById('MOVIS_image').style.opacity = "0";
+                }
+                MOVIS_stop()
+              </script>
+            </td>
+            <td style="width:100%;vertical-align:middle;padding-left:5px;padding-top:0px;padding-bottom:0px">
+              <papertitle>MOVIS: Enhancing Multi-Object Novel View Synthesis for Indoor Scenes</papertitle>
+              <br>
+              <strong>Ruijie Lu*</strong>,
+              <a href="https://yixchen.github.io/" target="_blank">Yixin Chen*</a>,
+              <a href="https://dali-jack.github.io/Junfeng-Ni/" target="_blank">Junfeng Ni</a>,
+              <a href="https://buzz-beater.github.io/" target="_blank">Baoxiong Jia</a>,
+              <a href="https://yuliu-ly.github.io/" target="_blank">Yu Liu</a>,
+              <a href="https://github.com/dnvtmf" target="_blank">Diwen Wan</a>,
+              <a href="https://www.cis.pku.edu.cn/info/1177/1378.htm" target="_blank">Gang Zeng</a>,
+              <a href="https://siyuanhuang.com/" target="_blank">Siyuan Huang</a>
+              <br>
+              <em>CVPR</em> 2025 <font color='red'></font>
+              <br>
+              <a href="https://arxiv.org/abs/2412.11457" target="_blank">[Paper]</a>
+              <a href="https://github.com/Jason-aplp/MOVIS-code" target="_blank">[Code]</a>
+              <a href="https://huggingface.co/datasets/JasonAplp/MOVIS" target="_blank">[Data]</a>
+              <a href="https://jason-aplp.github.io/MOVIS/" target="_blank">[Project Page]</a>
+              <br>
+              <abs>
+                We introduce <strong>MOVIS</strong>, which repurposes pre-trained diffusion models for multi-object level novel view synthesis (NVS) in indoor scenes. The key insight lies in incorporating a structure-aware noise scheduler and an auxiliary mask prediction task under novel views.
+              </abs>
+            </td>
+          </tr>    
 
           <!-- RoomTex -->
           <tr onmouseout="RoomTex_stop()" onmouseover="RoomTex_start()">
