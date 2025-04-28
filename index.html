@@ -127,11 +127,94 @@
               </abs>
             </td>
           </tr>     
+          
+          <!-- DP-Recon -->
+          <tr onmouseout="DPRecon_stop()" onmouseover="DPRecon_start()">
+            <td style="width:30%;vertical-align:middle;padding-left:0px;padding-top:0px">
+              <div class="one" style="display: flex; align-items: center;">
+                <video width="140%" height="auto" muted autoplay loop>
+                  <source src="images/dprecon.mp4" type="video/mp4">
+                </video>
+              </div>
+              <script type="text/javascript">
+                function DPRecon_start() {
+                  document.getElementById('DPRecon_image').style.opacity = "1";
+                }
+
+                function DPRecon_stop() {
+                  document.getElementById('DPRecon_image').style.opacity = "0";
+                }
+                DPRecon_stop()
+              </script>
+            </td>
+            <td style="width:100%;vertical-align:middle;padding-left:5px;padding-top:0px;padding-bottom:0px">
+              <papertitle>Decompositional Neural Scene Reconstruction with Generative Diffusion Prior</papertitle>
+              <br>
+                <a href="https://dali-jack.github.io/Junfeng-Ni/" target="_blank">Junfeng Ni</a>,
+                <a href="https://yuliu-ly.github.io/" target="_blank">Yu Liu</a>, 
+                <strong>Ruijie Lu</strong>,
+                <a href="https://github.com/zr-zhou0o0" target="_blank">Zirui Zhou</a>,
+                <a href="https://zhusongchun.net/" target="_blank">Song-Chun Zhu</a>, 
+                <a href="https://yixchen.github.io/" target="_blank">Yixin Chen</a>,
+                <a href="https://siyuanhuang.com/" target="_blank">Siyuan Huang</a>
+              <br>
+              <em>CVPR</em> 2025
+              <br>
+              <a href="https://arxiv.org/abs/2503.14830" target="_blank">[Paper]</a>
+              <a href="https://dp-recon.github.io/" target="_blank">[Project Page]</a>
+              <a href="https://github.com/DP-Recon/DP-Recon" target="_blank">[Code]</a>
+              <br>
+              <abs>
+                We introduce <strong>DP-Recon</strong>, a novel approach that distills off-the-shelf diffusion models for high-quality decompositional scene reconstruction from sparse view images. Further fine-grained editings are well supported.
+              </abs>
+            </td>
+          </tr>
+
+          <!-- ArtGS -->
+          <tr onmouseout="ArtGS_stop()" onmouseover="ArtGS_start()">
+            <td style="width:30%;vertical-align:middle;padding-left:0px;padding-top:0px">
+              <div class="one" style="display: flex; align-items: center;">
+                <img src='images/artgs.gif', width="220">
+              </div>
+              <script type="text/javascript">
+                function ArtGS_start() {
+                  document.getElementById('ArtGS_image').style.opacity = "1";
+                }
+    
+                function ArtGS_stop() {
+                  document.getElementById('ArtGS_image').style.opacity = "0";
+                }
+                ArtGS_stop()
+              </script>
+            </td>
+            <td style="width:100%;vertical-align:middle;padding-left:5px;padding-top:0px;padding-bottom:0px">
+              <papertitle>Building Interactable Replicas of Complex Articulated Objects via Gaussian Splatting</papertitle>
+              <br>
+              <a href="https://yuliu-ly.github.io/" target="_blank">Yu Liu</a>,
+              <a href="https://buzz-beater.github.io/" target="_blank">Baoxiong Jia</a>,
+              <strong>Ruijie Lu</strong>,
+              <a href="https://dali-jack.github.io/Junfeng-Ni/" target="_blank">Junfeng Ni</a>,
+              <a href="https://www.zhusongchun.net" target="_blank">Song-Chun Zhu</a>,
+              <a href="https://siyuanhuang.com/" target="_blank">Siyuan Huang</a>
+              <br>
+              <em>ICLR</em> 2025
+              <br>
+              <a href="https://arxiv.org/abs/2502.19459" target="_blank">[Paper]</a>
+              <a href="https://articulate-gs.github.io/" target="_blank">[Project Page]</a>
+              <a href="https://github.com/YuLiu-LY/ArtGS" target="_blank">[Code]</a>
+              <br>
+              <abs>
+                We introduce <strong>ArtGS</strong>, a novel approach that leverages 3D Gaussians to reconstruct articulated objects from 2 states of RGBD images, which achieves state-of-the-art performance in joint parameter estimation and part mesh reconstruction.
+              </abs>
+            </td>
+          </tr>
+
+
           <!-- SP-GS -->
           <tr onmouseout="SPGS_stop()" onmouseover="SPGS_start()">
-            <td style="width:30%;vertical-align:middle;padding-left:10px;padding-top:0px">
+            <td style="width:30%;vertical-align:middle;padding-left:0px;padding-top:0px">
               <div class="one" style="display: flex; align-items: center;">
-                <video width="130%" height="auto" muted autoplay loop>
+                <video width="140%" height="auto" muted autoplay loop>
                   <source src="images/SP-GS.mp4" type="video/mp4">
                 </video>
               </div>
