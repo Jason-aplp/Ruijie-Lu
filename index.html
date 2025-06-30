@@ -44,7 +44,49 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <!-- TACO -->
+          <tr onmouseout="TACO_stop()" onmouseover="TACO_start()">
+            <td style="width:30%;vertical-align:middle;padding-left:0px;padding-top:0px">
+              <div class="one" style="display: flex; align-items: center;">
+                <video width="140%" height="auto" muted autoplay loop>
+                  <source src="images/TACO.mp4" type="video/mp4">
+                </video>
+              </div>
+              <script type="text/javascript">
+                function MOVIS_start() {
+                  document.getElementById('TACO_image').style.opacity = "1";
+                }
 
+                function MOVIS_stop() {
+                  document.getElementById('TACO_image').style.opacity = "0";
+                }
+                MOVIS_stop()
+              </script>
+            </td>
+            <td style="width:100%;vertical-align:middle;padding-left:5px;padding-top:0px;padding-bottom:0px">
+              <papertitle>TACO: Taming Diffusion for in-the-wild Video Amodal Completion</papertitle>
+              <br>
+              <strong>Ruijie Lu</strong>,
+              <a href="https://yixchen.github.io/" target="_blank">Yixin Chen</a>,
+              <a href="https://yuliu-ly.github.io/" target="_blank">Yu Liu</a>,
+              <a href="https://me.kiui.moe/" target="_blank">Jiaxiang Tang</a>,
+              <a href="https://dali-jack.github.io/Junfeng-Ni/" target="_blank">Junfeng Ni</a>,
+              <a href="https://github.com/dnvtmf" target="_blank">Diwen Wan</a>,
+              <a href="https://www.cis.pku.edu.cn/info/1177/1378.htm" target="_blank">Gang Zeng</a>,
+              <a href="https://siyuanhuang.com/" target="_blank">Siyuan Huang</a>
+              <br>
+              <em>ICCV</em> 2025 <font color='red'></font>
+              <br>
+              <a href="https://arxiv.org/abs/2503.12049" target="_blank">[Paper]</a>
+              <a href="https://github.com/Jason-aplp/TACO-code" target="_blank">[Code]</a>
+              <a href="https://huggingface.co/datasets/JasonAplp/TACO_training_dataset" target="_blank">[Data]</a>
+              <a href="https://jason-aplp.github.io/TACO/" target="_blank">[Project Page]</a>
+              <br>
+              <abs>
+                We introduce <strong>TACO</strong>, which repurposes pre-trained video diffusion models for Video Amodal Completion (VAC), facilitating downstream tasks like reconstruction. The key insight lies in the data curation and progressive training strategy. 
+              </abs>
+            </td>
+          </tr>    
           <!-- MOVIS -->
           <tr onmouseout="MOVIS_stop()" onmouseover="MOVIS_start()">
             <td style="width:30%;vertical-align:middle;padding-left:0px;padding-top:0px">
